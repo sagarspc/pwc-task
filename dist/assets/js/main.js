@@ -12,5 +12,8 @@ $(document).ready(function(){
       // manual carousel controls
     $('.next').click(function(){ $('.carousel').carousel('next');return false; });
     $('.prev').click(function(){ $('.carousel').carousel('prev');return false; });
-    
+    $('.item-gallery').click(function(){
+      $('.item-gallery.get-hover-color').removeClass("get-hover-color");
+      $(this).addClass("get-hover-color")
+    })
 });
